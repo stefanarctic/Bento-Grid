@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container {
+  width: 800px;
+  height: 500px;
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+body .container * {
+  border: 2px solid red;
+  border-radius: 1.5em;
+}
+body .container > .col-left {
+  flex: 2.7;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  border: none;
+}
+body .container > .col-left > .row1 {
+  flex: 1.7;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  border: none;
+}
+body .container > .col-left > .row1 > .col-left {
+  flex: 1.5;
+}
+body .container > .col-left > .row1 > .col-right {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  border: none;
+}
+body .container > .col-left > .row1 > .col-right > .row1 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  border: none;
+}
+body .container > .col-left > .row1 > .col-right > .row1 > .col-left {
+  flex: 1;
+}
+body .container > .col-left > .row1 > .col-right > .row1 > .col-right {
+  flex: 1;
+}
+body .container > .col-left > .row1 > .col-right > .row2 {
+  flex: 1.5;
+}
+body .container > .col-left > .row1 > .col-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  border: none;
+}
+body .container > .col-left > .row1 > .col-left > .row1 {
+  flex: 2;
+}
+body .container > .col-left > .row1 > .col-left > .row2 {
+  flex: 1;
+}
+body .container > .col-left > .row2 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  border: none;
+}
+body .container > .col-left > .row2 > .col-left {
+  flex: 2;
+}
+body .container > .col-left > .row2 > .col-right {
+  flex: 1.2;
+}
+body .container > .col-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  border: none;
+}
+body .container > .col-right > .row1 {
+  flex: 1;
+}
+body .container > .col-right > .row2 {
+  flex: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: white;
+  }
+  body .container {
+    width: 800px;
+    height: 500px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  body .container * {
+    border: 2px solid red;
+    border-radius: 1.5em;
+  }
+  body .container > .col-left {
+    flex: 2.7;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border: none;
+  }
+  body .container > .col-left > .row1 {
+    flex: 1.7;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border: none;
+  }
+  body .container > .col-left > .row1 > .col-left {
+    flex: 1.5;
+  }
+  body .container > .col-left > .row1 > .col-right {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border: none;
+  }
+  body .container > .col-left > .row1 > .col-right > .row1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border: none;
+  }
+  body .container > .col-left > .row1 > .col-right > .row1 > .col-left {
+    flex: 1;
+  }
+  body .container > .col-left > .row1 > .col-right > .row1 > .col-right {
+    flex: 1;
+  }
+  body .container > .col-left > .row1 > .col-right > .row2 {
+    flex: 1.5;
+  }
+  body .container > .col-left > .row1 > .col-left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border: none;
+  }
+  body .container > .col-left > .row1 > .col-left > .row1 {
+    flex: 2;
+  }
+  body .container > .col-left > .row1 > .col-left > .row2 {
+    flex: 1;
+  }
+  body .container > .col-left > .row2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border: none;
+  }
+  body .container > .col-left > .row2 > .col-left {
+    flex: 2;
+  }
+  body .container > .col-left > .row2 > .col-right {
+    flex: 1.2;
+  }
+  body .container > .col-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border: none;
+  }
+  body .container > .col-right > .row1 {
+    flex: 1;
+  }
+  body .container > .col-right > .row2 {
+    flex: 1;
+  }
+}
